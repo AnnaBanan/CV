@@ -1,0 +1,15 @@
+@import 'spaces';
+.error{
+    background-color: black;
+    min-height: 100vh;
+    text-align: center;
+    color: lightgrey;
+    padding: $space_700;
+    @media only screen and (max-width: 600px ) {padding: $space_500 $space_400;}
+    p{
+        padding-bottom: $space_500;
+    }
+    button{
+        border: 1px solid lightgrey;
+    }
+}
