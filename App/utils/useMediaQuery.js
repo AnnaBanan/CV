@@ -7,7 +7,7 @@ export const useMediaQuery = (mediaQuery) => {
     const e = () => setMatch(mqList.matches);
     mqList.addEventListener("change", e);
     e();
-    return () => mqList.removeEventListener("chenge", e);
+    return () => mqList.removeEventListener("change", e);
   }, [mediaQuery]);
 
   return match;
