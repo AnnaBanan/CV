@@ -28,8 +28,12 @@ const Contact = () => {
         <li>
           <IconLink />
           <span>
-            <a href="https://www.linkedin.com/in/anna-maria-tonke-94893821b/">
-              Linked In
+            <a
+              href="https://www.linkedin.com/in/anna-maria-tonke-94893821b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
             </a>
           </span>
         </li>
