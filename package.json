@@ -1,0 +1,36 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "This is CV of Anna-Maria Tonke",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://AnnaBanan/CV.git"
+  },
+  "keywords": [
+    "CV"
+  ],
+  "author": "Anna-Maria Tonke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaBanan/CV/issues"
+  },
+  "homepage": "https://github.com/AnnaBanan/CV#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-webmanifest": "^2.8.2",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.8.1",
+    "react-router-dom": "^6.8.1"
+  }
+}
