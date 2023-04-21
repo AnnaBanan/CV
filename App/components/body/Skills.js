@@ -22,7 +22,7 @@ const Skills = () => (
           <p>Accessibility, UX</p>
         </div>
       </div>
-      <h2 className={styles.mt_300}>Experiences</h2>
+      <h2 className={styles.experiences}>Experiences</h2>
       <div className={styles.card_wrapper}>
         <div className={styles.card}>
           <h3>Working method</h3>

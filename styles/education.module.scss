@@ -1,50 +1,58 @@
-@import 'colors';
-@import 'spaces';
+@import "colors";
+@import "spaces";
 
-.education{
-    background-color: var(--medium);
-    padding: $space_700;
-    @media only screen and (max-width: 600px ) {padding: $space_500 $space_400;}
-    .content{
-        max-width: 600px;
-        margin: 0 auto;
-        .stepper{
-            $circle: 0.5rem;
-            $space: 1rem;
-            display: flex;
-            gap: $circle;
-            flex-direction: column;
-            .stepper__item{
-                display: flex;
-                gap: $circle;
-                position: relative;
-                &::before{
-                    content: "o";
-                    font-family: 'Academy Engraved LET', serif;
-                    line-height: 1.4;
-                    font-size: 1.2rem;
-                    text-align: center;
-                    background-color: transparent;
-                    border-radius: 50%;
-                    height: $circle;
-                    max-width: $circle;
-                    min-width: $circle;
-                    flex: 1 0 auto;
-                    margin-right: $space;
-                }
-                &:not(:last-child)::after{
-                    content: "";
-                    position: absolute;
-                    top: calc($space + $circle);
-                    bottom: 0;
-                    transform: translateX(calc(($circle / 2)));
-                    width: 1px;
-                    background-color: var(--black);
-                }
-                .stepper__content:not(:last-child){
-                    padding-bottom: $space;
-                }
-            }
+.education {
+  background-color: var(--medium);
+  @media print {
+    background-color: transparent;
+  }
+  padding: $space_700;
+  @media only screen and (max-width: 600px) {
+    padding: $space_500 $space_400;
+  }
+  @media print {
+    page-break-inside: avoid;
+  }
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    .stepper {
+      $circle: 0.5rem;
+      $space: 1rem;
+      display: flex;
+      gap: $circle;
+      flex-direction: column;
+      .stepper__item {
+        display: flex;
+        gap: $circle;
+        position: relative;
+        &::before {
+          content: "o";
+          font-family: "Academy Engraved LET", serif;
+          line-height: 1.4;
+          font-size: 1.2rem;
+          text-align: center;
+          background-color: transparent;
+          border-radius: 50%;
+          height: $circle;
+          max-width: $circle;
+          min-width: $circle;
+          flex: 1 0 auto;
+          margin-right: $space;
         }
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          top: calc($space + $circle);
+          bottom: 0;
+          transform: translateX(calc(($circle / 2)));
+          width: 1px;
+          background-color: var(--black);
+        }
+        .stepper__content:not(:last-child) {
+          padding-bottom: $space;
+        }
+      }
     }
+  }
 }

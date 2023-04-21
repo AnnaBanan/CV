@@ -6,6 +6,7 @@ import { useMediaQuery } from "../../utils/useMediaQuery";
 
 const Header = () => {
   const desktopMQ = useMediaQuery("(min-width: 882px)");
+  const printMQ = useMediaQuery("print");
   return (
     <div className={styles.header}>
       <div className={styles.header__wrapper}>
@@ -17,7 +18,7 @@ const Header = () => {
           <div className={styles.profile}>
             <Profile />
           </div>
-          {desktopMQ ? <Contact /> : ""}
+          {desktopMQ | printMQ ? <Contact /> : ""}
         </div>
       </div>
     </div>

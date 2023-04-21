@@ -1,20 +1,35 @@
-@import 'spaces';
-.skills{
-    padding: $space_600;
-    @media only screen and (max-width: 600px ) {padding: $space_500 $space_400;}
-    .mt_300{
-        margin-top: $space_300;
+@import "spaces";
+.skills {
+  padding: $space_600;
+  @media only screen and (max-width: 600px) {
+    padding: $space_500 $space_400;
+  }
+  .experiences {
+    margin-top: $space_300;
+    @media print {
+      padding-top: $space_650;
     }
-    .card_wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: $space_100;
-        @media only screen and (max-width: 1064px ) {grid-template-columns: 1fr 1fr;}
-        @media only screen and (max-width: 480px ) {grid-template-columns: 1fr;}
-        .card{
-            padding: $space_200; 
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            border-radius: 4px;
-        }
+  }
+  .card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $space_100;
+    @media only screen and (max-width: 1064px) {
+      grid-template-columns: 1fr 1fr;
     }
+    @media only screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      padding: $space_200;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 4px;
+      @media print {
+        box-shadow: 0 0 0 1px black;
+      }
+    }
+    @media print {
+      page-break-inside: avoid;
+    }
+  }
 }

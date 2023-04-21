@@ -1,7 +1,10 @@
-@import 'colors';
-.footer{
-    padding: 0.75rem;
-    text-align: center;
-    color: var(--light);
-    background-color: var(--black);
+@import "colors";
+.footer {
+  padding: 0.75rem;
+  text-align: center;
+  color: var(--light);
+  background-color: var(--black);
+  @media print {
+    display: none;
+  }
 }
