@@ -30,7 +30,7 @@ const Impressum = () => {
           <br />
         </p>
         <Link to="/">
-          <button>go back</button>
+          <button role="link">go back</button>
         </Link>
       </div>
     </div>

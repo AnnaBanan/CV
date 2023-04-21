@@ -1,5 +1,5 @@
 # CV
-this is my CV
+this is my CV -> https://tonke.netlify.app/ 
 
 Application is build with react, npm, parcel, Sass, CSS Modules.
 ___
