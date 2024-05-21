@@ -3,6 +3,8 @@ import IconHome from "./icons/IconHome";
 import IconMail from "./icons/IconMail";
 import IconPhone from "./icons/IconPhone";
 import IconLink from "./icons/IconLink";
+import IconDownload from "./icons/IconDownload";
+import * as CVpdf from "../../assets/CV.pdf";
 
 const Contact = () => {
   return (
@@ -34,6 +36,14 @@ const Contact = () => {
               rel="noreferrer"
             >
               LinkedIn
+            </a>
+          </span>
+        </li>
+        <li>
+          <IconDownload />
+          <span>
+            <a href={CVpdf} download>
+              Download CV as pdf
             </a>
           </span>
         </li>
