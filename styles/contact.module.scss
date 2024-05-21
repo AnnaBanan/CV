@@ -10,8 +10,9 @@
     page-break-inside: avoid;
   }
   ul li {
-    margin: 8px;
-    line-height: 24px;
+    margin: $space_100 0;
+    line-height: 1.5rem;
+    font-size: 1.125rem;
     display: flex;
     span {
       margin-left: $space_50;

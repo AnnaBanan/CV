@@ -11,7 +11,10 @@ const Skills = () => (
         </div>
         <div className={styles.card}>
           <h3>Intermediate</h3>
-          <p>Javascript, Angular, Storybook, npm</p>
+          <p>
+            Javascript, Angular, Typescript, Handlebars, Mustache, Storybook,
+            npm
+          </p>
         </div>
         <div className={styles.card}>
           <h3>Discovering</h3>

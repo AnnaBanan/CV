@@ -4,7 +4,7 @@ import IconMail from "./icons/IconMail";
 import IconPhone from "./icons/IconPhone";
 import IconLink from "./icons/IconLink";
 import IconDownload from "./icons/IconDownload";
-import * as MyPDF from "../../assets/CV.pdf";
+import * as CVpdf from "../../assets/CV.pdf";
 
 const Contact = () => {
   return (
@@ -42,8 +42,8 @@ const Contact = () => {
         <li>
           <IconDownload />
           <span>
-            <a href="./assets/CV.pdf" download="CV.pdf">
-              Download Here
+            <a href={CVpdf} download>
+              Download CV as pdf
             </a>
           </span>
         </li>
