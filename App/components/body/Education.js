@@ -8,6 +8,22 @@ const Education = () => {
         <ol className={style.stepper}>
           <li className={style.stepper__item}>
             <div className={style.stepper__content}>
+              <h3>
+                since June 2023: Web Developer at Medienwerft GmbH, Remote
+              </h3>
+              <p>
+                Developing modern frontend solutions for various demanding
+                customers and products as e-commerce shops and other web
+                platforms.
+              </p>
+              <p>
+                Tech-Stack: Angular, Sass, Handlebars, HTML 5, CSS3, JavaScript,
+                Gulp
+              </p>
+            </div>
+          </li>
+          <li className={style.stepper__item}>
+            <div className={style.stepper__content}>
               <h3>2019 – 2023: UI Developer at immowelt GmbH, Nürnberg</h3>
               <p>
                 Implementation of the redesigned detail view and new features
