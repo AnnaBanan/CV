@@ -24,7 +24,7 @@ const Education = () => {
           </li>
           <li className={style.stepper__item}>
             <div className={style.stepper__content}>
-              <h3>2019 – 2023: UI Developer at immowelt GmbH, Nürnberg</h3>
+              <h3>2019 – 2023: UI Developer at immowelt GmbH, Nuremberg</h3>
               <p>
                 Implementation of the redesigned detail view and new features
                 for the property search with a product team working with Angular
@@ -37,7 +37,7 @@ const Education = () => {
             <div className={style.stepper__content}>
               <h3>
                 2016 – 2019: Apprenticeship as a media designer at immowelt
-                GmbH, Nürnberg
+                GmbH, Nuremberg
               </h3>
               <p>HTML5, CSS3, Sass, Javascript fundamentals</p>
             </div>
