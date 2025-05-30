@@ -1,14 +1,14 @@
-@import "colors";
-@import "spaces";
+@use "./colors";
+@use "./spaces";
 
 .education {
   background-color: var(--medium);
+  padding: spaces.$space_700;
   @media print {
     background-color: transparent;
   }
-  padding: $space_700;
   @media only screen and (max-width: 600px) {
-    padding: $space_500 $space_400;
+    padding: spaces.$space_500 spaces.$space_400;
   }
   @media print {
     page-break-inside: avoid;
