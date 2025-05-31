@@ -1,12 +1,32 @@
-import * as portraitL from "../../../assets/portrait-l.jpg";
-import * as portraitL2x from "../../../assets/portrait-l@2x.jpg";
-import * as portraitM from "../../../assets/portrait-m.png";
-import * as portraitS from "../../../assets/portrait-s.png";
-import * as portraitXS from "../../../assets/portrait-xs.jpg";
-import * as portraitXS2x from "../../../assets/portrait-xs@2x.jpg";
-import { useMediaQuery } from "../../utils/useMediaQuery";
+const portraitL = new URL(
+  "../../../assets/images/portrait-l.jpg",
+  import.meta.url
+);
+const portraitL2x = new URL(
+  "../../../assets/images/portrait-l@2x.jpg",
+  import.meta.url
+);
+const portraitM = new URL(
+  "../../../assets/images/portrait-m.png",
+  import.meta.url
+);
+const portraitS = new URL(
+  "../../../assets/images/portrait-s.png",
+  import.meta.url
+);
+const portraitXS = new URL(
+  "../../../assets/images/portrait-xs.jpg",
+  import.meta.url
+);
+const portraitXS2x = new URL(
+  "../../../assets/images/portrait-xs@2x.jpg",
+  import.meta.url
+);
 
 const Portrait = () => {
+  console.log("portraitL:", portraitL);
+  console.log("portraitXS2x:", JSON.stringify(portraitXS2x));
+
   return (
     <>
       <picture className="flex no-print">
@@ -14,12 +34,16 @@ const Portrait = () => {
           srcSet={`${portraitXS} 1x, ${portraitXS2x} 2x`}
           media="(max-width: 443px)"
         />
-        <source srcSet={portraitS} media="(max-width: 600px)" />
-        <source srcSet={portraitM} media="(max-width: 881px)" />
+        <source srcSet={`${portraitS} 1x`} media="(max-width: 600px)" />
+        <source srcSet={`${portraitM} 1x`} media="(max-width: 881px)" />
         <source srcSet={`${portraitL} 1x, ${portraitL2x} 2x`} />
         <img src={portraitL} alt="Portrait" />
       </picture>
-      <img src={portraitM} alt="Portrait" className="only-print" />
+      <img
+        src={portraitM.default || portraitM}
+        alt="Portrait"
+        className="only-print"
+      />
     </>
   );
 };
