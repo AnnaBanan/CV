@@ -9,17 +9,48 @@ const Education = () => {
           <li className={style.stepper__item}>
             <div className={style.stepper__content}>
               <h3>
-                since June 2023: Web Developer at Medienwerft GmbH, Remote
+                since May 2026: Angular Frontend Developer at Mindmonopol,
+                Remote
               </h3>
               <p>
-                Developing modern frontend solutions for various demanding
-                customers and products as e-commerce shops and other web
-                platforms.
+                Further development of existing software solutions and
+                implementation of new features. Also migrated the test
+                infrastructure of a component library from Karma/Jasmine to
+                Vitest.
               </p>
+            </div>
+          </li>
+          <li className={style.stepper__item}>
+            <div className={style.stepper__content}>
+              <h3>
+                Aug 2025 – April 2026: Frontend Developer at Raiys, Remote
+              </h3>
               <p>
-                Tech-Stack: Angular, Sass, Handlebars, HTML 5, CSS3, JavaScript,
-                Gulp
+                Conception and development of modern Angular projects for
+                practice management software with patient management and a
+                digital anamnesis form. Implementation of new features and
+                apps with API integration as well as real-time communication
+                via SignalR and GraphQL. Focus on high code quality through
+                automated testing (Jest, Playwright). Implementation of
+                responsive, highly usable interfaces with multi-language
+                support.
               </p>
+            </div>
+          </li>
+          <li className={style.stepper__item}>
+            <div className={style.stepper__content}>
+              <h3>
+                June 2023 – Aug 2025: Web Developer at Medienwerft GmbH,
+                Remote
+              </h3>
+              <p>
+                Developing modern frontend solutions and implementing
+                e-commerce shops and web platforms in close collaboration with
+                customers (incl. the Sales Shop feature for Kion). Fast
+                onboarding into new topics, proactive communication and
+                structured implementation of requirements.
+              </p>
+              <p>Tech-Stack: Angular, TypeScript, Sass, HTML5, CSS3, Jest</p>
             </div>
           </li>
           <li className={style.stepper__item}>
