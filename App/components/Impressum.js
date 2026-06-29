@@ -10,7 +10,7 @@ const Impressum = () => {
         <p>
           Anna-Maria Tonke
           <br />
-          Eichendorffstraße 53
+          Äußere Sulzbacherstr. 162
           <br />
           90491 Nürnberg
           <br />

@@ -1,21 +1,21 @@
-@import "spaces";
+@use "./spaces";
 .contact {
   @media only screen and (max-width: 881px) {
-    padding: $space_700;
+    padding: spaces.$space_700;
   }
   @media only screen and (max-width: 600px) {
-    padding: $space_500 $space_400;
+    padding: spaces.$space_500 spaces.$space_400;
   }
   @media print {
     page-break-inside: avoid;
   }
   ul li {
-    margin: $space_100 0;
+    margin: spaces.$space_100 0;
     line-height: 1.5rem;
     font-size: 1.125rem;
     display: flex;
     span {
-      margin-left: $space_100;
+      margin-left: spaces.$space_100;
     }
   }
 }

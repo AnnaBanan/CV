@@ -1,11 +1,11 @@
-@import "colors";
-@import "spaces";
+@use "./colors";
+@use "./spaces";
 .header {
-  padding-top: $space_300;
-  @media only screen and (max-width: 443px) {
-    padding-top: $space_100;
-  }
+  padding-top: spaces.$space_300;
   background-color: var(--light);
+  @media only screen and (max-width: 443px) {
+    padding-top: spaces.$space_100;
+  }
   @media print {
     background-color: var(--white);
   }
@@ -32,8 +32,8 @@
     @media only screen and (max-width: 600px) and (min-width: 444px) {
       width: 30%;
       order: 2;
-      padding-right: $space_400;
-      padding-top: $space_400;
+      padding-right: spaces.$space_400;
+      padding-top: spaces.$space_400;
     }
     @media only screen and (max-width: 443px) {
       width: auto;
@@ -48,26 +48,26 @@
     }
   }
   & .header__content {
-    width: 50%;
+    width: 53%;
+    padding: spaces.$space_500;
     @media only screen and (max-width: 600px), print {
       width: 70%;
     }
     @media only screen and (max-width: 443px) {
       width: 100%;
     }
-    padding: $space_500;
     @media only screen and (max-width: 600px) {
-      padding: $space_400;
+      padding: spaces.$space_400;
     }
     .headline {
-      margin-bottom: $space_300;
+      margin-bottom: spaces.$space_300;
       @media only screen and (max-width: 443px) {
-        margin-bottom: $space_100;
+        margin-bottom: spaces.$space_100;
       }
     }
     .profile {
-      max-width: 480px;
-      margin-bottom: $space_300;
+      max-width: 700px;
+      margin-bottom: spaces.$space_300;
     }
   }
 }

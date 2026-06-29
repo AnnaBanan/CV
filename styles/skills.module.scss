@@ -1,19 +1,19 @@
-@import "spaces";
+@use "./spaces";
 .skills {
-  padding: $space_600;
+  padding: spaces.$space_600;
   @media only screen and (max-width: 600px) {
-    padding: $space_500 $space_400;
+    padding: spaces.$space_500 spaces.$space_400;
   }
   .experiences {
-    margin-top: $space_300;
+    margin-top: spaces.$space_300;
     @media print {
-      padding-top: $space_650;
+      padding-top: spaces.$space_650;
     }
   }
   .card_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: $space_100;
+    gap: spaces.$space_100;
     @media only screen and (max-width: 1064px) {
       grid-template-columns: 1fr 1fr;
     }
@@ -21,7 +21,7 @@
       grid-template-columns: 1fr;
     }
     .card {
-      padding: $space_200;
+      padding: spaces.$space_200;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       border-radius: 4px;
       @media print {

@@ -7,18 +7,15 @@ const Skills = () => (
       <div className={styles.card_wrapper}>
         <div className={styles.card}>
           <h3>Advanced</h3>
-          <p>HTML5, CSS3, Sass</p>
+          <p>Angular, RxJS, HTML5, Sass/SCSS</p>
         </div>
         <div className={styles.card}>
           <h3>Intermediate</h3>
-          <p>
-            Javascript, Angular, Typescript, Handlebars, Mustache, Storybook,
-            npm
-          </p>
+          <p>TypeScript, NgRx SignalStore, Jest, Playwright, GraphQL, SignalR</p>
         </div>
         <div className={styles.card}>
           <h3>Discovering</h3>
-          <p>React, Figma, Core Web Vitals</p>
+          <p>NX Monorepo, Angular Material, Storybook</p>
         </div>
         <div className={styles.card}>
           <h3>Observing</h3>
@@ -29,24 +26,22 @@ const Skills = () => (
       <div className={styles.card_wrapper}>
         <div className={styles.card}>
           <h3>Working method</h3>
-          <p>Scrum, Kanban</p>
+          <p>Scrum</p>
         </div>
         <div className={styles.card}>
           <h3>Tools</h3>
-          <p>
-            Gitlab, Github, Jira, Confluence, Adobe Creative Cloud, MS Office
-          </p>
+          <p>Github, Gitlab, Jira, Confluence, Figma</p>
         </div>
         <div className={styles.card}>
           <h3>Additional</h3>
-          <p>Git Flow, Semantic Versioning</p>
+          <p>Responsive Web Design</p>
         </div>
         <div className={styles.card}>
           <h3>Language</h3>
           <p>
             German native speaker
             <br />
-            English B2 level
+            English C1 level
           </p>
         </div>
       </div>

@@ -3,8 +3,6 @@ import IconHome from "./icons/IconHome";
 import IconMail from "./icons/IconMail";
 import IconPhone from "./icons/IconPhone";
 import IconLink from "./icons/IconLink";
-import IconDownload from "./icons/IconDownload";
-import * as CVpdf from "../../assets/CV.pdf";
 
 const Contact = () => {
   return (
@@ -13,7 +11,7 @@ const Contact = () => {
       <ul>
         <li>
           <IconHome />
-          <span>Eichendorffstr. 53, Nuremberg</span>
+          <span>Äußere Sulzbacherstr. 162, Nuremberg</span>
         </li>
         <li>
           <IconPhone />
@@ -36,14 +34,6 @@ const Contact = () => {
               rel="noreferrer"
             >
               LinkedIn
-            </a>
-          </span>
-        </li>
-        <li>
-          <IconDownload />
-          <span>
-            <a href={CVpdf} download>
-              Download CV as pdf
             </a>
           </span>
         </li>

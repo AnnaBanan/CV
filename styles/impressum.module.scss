@@ -1,12 +1,12 @@
-@import "spaces";
-@import "colors";
+@use "./spaces";
+@use "./colors";
 .impressum {
-  padding: $space_700;
+  padding: spaces.$space_700;
   @media only screen and (max-width: 600px) {
-    padding: $space_500 $space_400;
+    padding: spaces.$space_500 spaces.$space_400;
   }
   text-align: center;
   p {
-    padding-bottom: $space_100;
+    padding-bottom: spaces.$space_100;
   }
 }
